@@ -1,0 +1,39 @@
+.homeCont{
+    width: 100vw;
+    background-color: white;
+    background-image: url(../../images/lion.gif);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.featureCont{
+    display: grid;
+    grid-gap: 4vw;
+    padding: 16vw;
+    padding-top: 10vw;
+    background-color: rgb(36, 28, 61, 0.9);
+    height: 60vh;
+}
+
+.sDText{
+    color: white;
+    font-size: 0.5vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+.whoWeAreCont{
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-gap: 1vw;
+    padding: 1vw;
+    margin-left: 10vw; 
+    margin-right: 10vw;
+    margin-top: 5vw;
+}
+
+.mainCont{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-gap: 1vw;
+}

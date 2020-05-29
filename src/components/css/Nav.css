@@ -1,0 +1,39 @@
+.main-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
+    grid-gap: 1vw;
+    padding: 1vw;
+    width: 98vw;
+    background-color: rgb(36, 28, 61, 0.9);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 300;
+    text-align: right;
+}
+
+#contact{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 5vw;
+    padding-top:1vw;
+    vertical-align: middle;
+}
+
+.nav-image{
+    width: 100%;
+    text-align: right;
+}
+
+#navLogo{
+    width: 4vw;
+}
