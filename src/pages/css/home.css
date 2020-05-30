@@ -1,39 +1,76 @@
 .homeCont{
-    width: 100vw;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.featureBgCont{
     background-image: url(../../images/lion.gif);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
 }
 
 .featureCont{
     display: grid;
     grid-gap: 4vw;
     padding: 16vw;
-    padding-top: 10vw;
+    padding-top: 15vw;
     background-color: rgb(36, 28, 61, 0.9);
-    height: 60vh;
-}
-
-.sDText{
-    color: white;
-    font-size: 0.5vw;
-    font-weight: 400;
-    text-align: center;
-}
-
-.whoWeAreCont{
-    display: grid;
-    grid-template-columns: 1fr 8fr;
-    grid-gap: 1vw;
-    padding: 1vw;
-    margin-left: 10vw; 
-    margin-right: 10vw;
-    margin-top: 5vw;
 }
 
 .mainCont{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionCont{
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr 2fr;
-    grid-gap: 1vw;
+    grid-template-rows: auto auto auto;
+    margin: 10vw;
+    grid-gap: 4vw;
+}
+
+.titleCont{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.contentCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.newsCont{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 10vw;
+    grid-gap: 4vw;
+    background-color: #f9f9f9;
+}
+
+.linkCta{
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: solid 1px #241C3D;
+    padding: 1vw;
+    width: 10vw;
+    justify-self: center;
+    text-decoration: none;
+}
+
+.linkCta:hover{
+    animation: swing 1s ease;
+}
+
+
+.joinUs{
+    text-align: right;
+    margin: 10vw;
+    margin-top: 1vw;
+}
+.joinUsLink{
+    color: #A26C1D;
+    border-bottom: solid 1px;
 }

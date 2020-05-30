@@ -1,19 +1,9 @@
 {
     "newsData": [
       {
-        "coverImage": "ACQUISITION",
+        "coverImage": "../images/lion.gif",
         "date": "13 MAY 2020",
         "title": "ON THE ROAD TO RECOVERY"
-      },
-      {
-        "coverImage": "ACQUISITION",
-        "date": "05 MARCH 2020",
-        "title": "RESTRICTING AND FOCUSING"
-      },
-      {
-        "coverImage": "ACQUISITION",
-        "date": "18 DECEMBER 2019",
-        "title": "PREPARATIONS FOR THE HOLIDAYS"
       }
     ]
   }

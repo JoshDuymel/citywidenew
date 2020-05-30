@@ -1,3 +1,7 @@
+.App{
+    overflow: hidden;
+}
+
 h1{
     font-size: 6vw;
     color: white;
@@ -5,7 +9,8 @@ h1{
 }
 
 h2{
-
+    color: black;
+    font-size: 4vw;
 }
 
 h3{
@@ -18,5 +23,76 @@ h4{
 
 h5{
     color: #A26C1D;
-    font-size: 0.6vw;
+    font-size: 1vw;
+}
+
+h6{
+    color: white;
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin: 0vw;
+}
+
+p{
+    color: #909090;
+    font-size: 1.2vw;
+}
+
+input{
+    margin-bottom: 3vw;
+}
+
+.sDText{
+    color: white;
+    font-size: 0.8vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cta{
+    color: black;
+    background-color: white;
+    border: solid 1px #241C3D;
+    padding: 1vw;
+    text-align: center;
+    width: 10vw;
+    text-decoration: none;
+}
+
+.cta:hover{
+    animation: swing 1s ease;
+}
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }

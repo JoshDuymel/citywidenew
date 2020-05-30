@@ -1,0 +1,29 @@
+.newsContainer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    grid-gap: 2vw;
+    padding: 2vw;
+}
+
+.newsImg{
+    width: 100%;
+}
+
+.newsContent{
+    display: grid;
+}
+
+.secTitle{
+    color: black;
+    font-size: 1vw;
+    border-bottom: solid black 2px;
+    height: 1.6vw;
+    margin-top: 0px;
+}
+
+.newsDate{
+    color: #A26C1D;
+    font-size: 0.8vw;
+    margin-top: 0px;
+}

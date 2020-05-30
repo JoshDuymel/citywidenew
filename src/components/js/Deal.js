@@ -1,14 +1,20 @@
 import React from 'react';
 import "../css/Deal.css";
 
-export default function Deal(props) {
+export default function DealCont(props) {
     return (
-        <div className='dealCont'>
-            <h1>{props.dealType}</h1>
-            <h3>CUSTOMER:</h3>
-            <h2>{props.customerName}</h2>
-            <h3>COUNTERPARTIES</h3>
-            <h2>{props.counterName}</h2>
+        <div className='dealBgCont'>
+            <div className='dealCont'>
+                <h1 className='jobType'>{props.dealType}</h1>
+                <div>
+                    <h3 className='roleType'>CUSTOMER:</h3>
+                    <h6>{props.customerName}</h6>
+                </div>
+                <div>
+                    <h3 className='roleType'>COUNTERPARTIES</h3>
+                    <h6>{props.counterName}</h6>
+                </div>
+            </div>
         </div>
     )
 }

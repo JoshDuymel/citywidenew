@@ -1,73 +1,79 @@
 import React from 'react';
 import "../css/home.css";
 
+import { Link } from "react-router-dom";
+
 import dealData from '../../data/deals.json';
 import employeeData from '../../data/employees.json';
 import newsData from '../../data/news.json';
 
-import Deal from '../../components/js/Deal';
+import DealCont from '../../components/js/Deal';
 import Employee from '../../components/js/Employee';
-import News from '../../components/js/News';
+import NewsItem from '../../components/js/News-Item';
 
 export default function Home() {
     return (
         <div className="homeCont">
 
-            <div className="featureCont" title="a featureBox">
-                <h1>
-                  Hands-on financing for<br/>Kiwis.
-                </h1>
-                <h4 className="sDText" >SCROLL DOWN</h4>
+            <div className="featureBgCont" title="a featureBox">
+                <div className="featureCont">
+                    <h1>
+                    Hands-on financing for<br/>Kiwis.
+                    </h1>
+                    <h4 className="sDText" >SCROLL DOWN</h4>
+                </div>
             </div>
 
-            <div className="whoWeAreCont" title="an about section">
-                <div className="numberCont">
+            <div className="sectionCont" title="an about section">
+                <div className="titleCont">
                     <h5>01</h5>
+                    <h5>WHO WE ARE</h5>
                 </div>
                 <div className="mainCont">
-                    <h5>WHO WE ARE</h5>
-                    <h3>Citywide Capital Limited is a small financing company. Because of our hands on management approach we are able to focus on our clients and achieve success. A two decade long working formula.</h3>
+                    <h2>Citywide Capital Limited is a small financing company. Because of our hands on management approach we are able to focus on our clients and achieve success. A two decade long working formula.</h2>
                     <p>Citywide does not participate by way of taking equity positions on any project. We are financiers, not developers, and do not use funds for our own purposes except in exceptional circumstances if a project turns sour and we think our position is better protected by buying back the subject property. That has only happened on two occasions in our history.</p>
-                    <a classname='cta'>About</a>
                 </div>
+                <Link to="/About" className="cta">ABOUT</Link>
             </div>
 
-            <div classname='sectionCont' title="the latest deals">
-                <div>
-                    <h4>02</h4>
-                    <h3>OUR LATEST DEALS</h3>
+            <div className="sectionCont" title="the latest deals">
+                <div className="titleCont">
+                    <h5>02</h5>
+                    <h5>OUR LATEST DEALS</h5>
                 </div>
                 <div className='contentCont'>
-                    {dealData.Deals.map(i => <Deal dealType={i.dealType} customerName={i.customerName} counterName={i.counterName}/>)}
+                    {dealData.dealData.map(i => <DealCont dealType={i.dealType} customerName={i.customerName} counterName={i.counterName}/>)}
                 </div>
-                <a classname='cta'>SEE MORE</a>
+                <Link to="/Deals" className="linkCta">SEE MORE</Link>
             </div>
 
             <div className='sectionCont' title="the employees">
-                <div>
-                    <h4>03</h4>
-                    <h3>OUR TEAM</h3>
+                <div className="titleCont">
+                    <h5>03</h5>
+                    <h5>OUR TEAM</h5>
                 </div>
                 <p>Our team of professionals is diverse and can boast collective decades of expereince to our craft.</p>
                 <div className='contentCont'>
-                    {employeeData.Employees.map(i => <Employee firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
+                    {employeeData.employeeData.map(i => <Employee firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
                 </div>
-                <a classname='cta'>SEE MORE</a>
+                <Link to="/Team" className="linkCta">SEE MORE</Link>
             </div>
 
-            <div className='sectionCont' title="latest news">
-                <div>
-                    <h4>04</h4>
-                    <h3>OUR LATEST NEWS</h3>
+            <div className='joinUs'>
+                <a className='joinUsLink'>JOIN US</a>
+            </div>
+
+            <div className='newsCont' title="latest news">
+                <div className="titleCont">
+                    <h5>04</h5>
+                    <h5>OUR LATEST NEWS</h5>
                 </div>
                 <div>
-                    <div className='contentCont'>
-                        {newsData.News.map(i => <News coverImage={i.coverImage} date={i.date} title={i.title}/>)}
-                        <a className='cta'>READ MORE</a>
+                    <div>
+                        {newsData.newsData.map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
                     </div>
-                    <h3 className='newsTitle'>CITYWIDE NEWS</h3>
                 </div>
-                <a className='cta'>SEE MORE</a>
+                <Link to="/News" className="linkCta">SEE MORE</Link>
             </div>
 
         </div>

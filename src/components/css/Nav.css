@@ -1,9 +1,9 @@
 .main-nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 8fr;
-    grid-gap: 1vw;
+    grid-template-columns: 10% 10% 70%;
+    grid-gap: 3%;
     padding: 1vw;
-    width: 98vw;
+    width: 100vw;
     background-color: rgb(36, 28, 61, 0.9);
     position: fixed;
     left: 0;

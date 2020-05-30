@@ -1,0 +1,17 @@
+.employeeBgCont{
+    background-image: url(../../images/static.gif);
+    background-repeat: no-repeat;
+}
+
+.employeeCont{
+    background-color: rgb(36, 28, 61, 0.9);
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+    vertical-align: text-bottom;
+    padding: 2vw;
+}
+
+.empName{
+    color: white;
+    align-self: flex-end;
+}
