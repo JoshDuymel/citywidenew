@@ -1,0 +1,26 @@
+.historyCont{
+    display: grid;
+    grid-template-rows: 80% 5% 15%;
+    width: 15vw;
+    border-bottom: 5px solid #57259E;
+    padding: 2vw;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+.historyCont h1{
+    font-size: 5vw;
+    color: #57259E;
+    margin-bottom: 0px;
+    align-items: flex-end;
+    transform: rotate(90);
+}
+
+.historyCont h2{
+    font-size: 1vw;
+    color: black;
+}
+
+svg{
+    fill: #57259E;
+}

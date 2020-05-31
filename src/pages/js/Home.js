@@ -60,7 +60,7 @@ export default function Home() {
             </div>
 
             <div className='joinUs'>
-                <a className='joinUsLink'>JOIN US</a>
+                <a className='joinUsLink' href="../../components/js/footer">JOIN US</a>
             </div>
 
             <div className='newsCont' title="latest news">
