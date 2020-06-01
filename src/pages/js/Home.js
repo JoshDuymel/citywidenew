@@ -17,9 +17,7 @@ export default function Home() {
 
             <div className="featureBgCont" title="a featureBox">
                 <div className="featureCont">
-                    <h1>
-                    Hands-on financing for<br/>Kiwis.
-                    </h1>
+                    <h1>Hands-on financing for<br/>Kiwis.</h1>
                     <h4 className="sDText" >SCROLL DOWN</h4>
                 </div>
             </div>
