@@ -43,6 +43,13 @@ input{
     margin-bottom: 3vw;
 }
 
+button{
+    background-color: none;
+    color: none;
+    fill: none;
+    border: none;
+}
+
 .sDText{
     color: white;
     font-size: 0.8vw;
@@ -62,6 +69,23 @@ input{
 
 .cta:hover{
     animation: swing 1s ease;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 50%;
+  }
+  
+::-webkit-scrollbar-track {
+background: #ffffff; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #241C3D; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
 }
 
 @keyframes swing

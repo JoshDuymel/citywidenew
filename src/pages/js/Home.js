@@ -70,7 +70,7 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                        {newsData.newsData.map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
+                        {newsData.newsData.slice(0).map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
                     </div>
                 </div>
                 <Link to="/News" className="linkCta">SEE MORE</Link>
