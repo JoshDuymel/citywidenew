@@ -10,7 +10,7 @@ import newsData from '../../data/news.json';
 import DealCont from '../../components/js/Deal';
 import Employee from '../../components/js/Employee';
 import NewsItem from '../../components/js/News-Item';
-
+import ScrollableContainer from "../../components/js/ScrollableContainer";
 export default function Home() {
     return (
         <div className="homeCont">
@@ -22,6 +22,18 @@ export default function Home() {
                     </h1>
                     <h4 className="sDText" >SCROLL DOWN</h4>
                 </div>
+            </div>
+
+            <div className="featureBgCont" title="a featureBox">
+                <ScrollableContainer>
+                    <div className="item">1</div>
+                    <div className="item">2</div>
+                    <div className="item">3</div>
+                    <div className="item">4</div>
+                    <div className="item">5</div>
+                    <div className="item">6</div>
+                    <div className="item">7</div>
+                </ScrollableContainer>
             </div>
 
             <div className="sectionCont" title="an about section">

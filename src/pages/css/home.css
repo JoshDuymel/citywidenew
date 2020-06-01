@@ -75,3 +75,11 @@
     color: #A26C1D;
     border-bottom: solid 1px;
 }
+
+.test-content{
+    height: 180px;
+    width: 180px;
+    background-color: bisque;
+    margin: 30px;
+    text-align: center;
+}
