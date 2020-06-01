@@ -6,8 +6,8 @@
 
 .dealCont{
     background-color: rgb(36, 28, 61, 0.9);
-    display: grid;
-    grid-template-rows: 3fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 2vw;
 }
 
@@ -16,8 +16,8 @@
     color: white;
     font-weight: 700;
     height: 2.5vw;
-    border-bottom: 6px solid purple;
-    margin-bottom: 3vw;
+    margin-bottom: 10vw;
+    justify-self: start;
 }
 
 .roleType{
