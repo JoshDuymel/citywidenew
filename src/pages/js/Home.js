@@ -42,7 +42,7 @@ export default function Home() {
                     <h5>OUR LATEST DEALS</h5>
                 </div>
                 <div className='contentCont'>
-                    {dealData.dealData.map(i => <DealCont dealType={i.dealType} customerName={i.customerName} counterName={i.counterName}/>)}
+                    {dealData.dealData.slice(0,3).map(i => <DealCont dealType={i.dealType} customerName={i.customerName} counterName={i.counterName}/>)}
                 </div>
                 <Link to="/Deals" className="linkCta">SEE MORE</Link>
             </div>
@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
                 <p>Our team of professionals is diverse and can boast collective decades of expereince to our craft.</p>
                 <div className='contentCont'>
-                    {employeeData.employeeData.map(i => <Employee firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
+                    {employeeData.employeeData.slice(0,3).map(i => <Employee firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
                 </div>
                 <Link to="/Team" className="linkCta">SEE MORE</Link>
             </div>

@@ -1,6 +1,7 @@
 .employeeBgCont{
     background-image: url(../../images/static.gif);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .employeeCont{
