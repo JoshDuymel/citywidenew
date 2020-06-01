@@ -27,6 +27,7 @@
 }
 
 .jobType{
+    width: fit-content;
     font-size: 1.8vw;
     color: white;
     font-weight: 700;
