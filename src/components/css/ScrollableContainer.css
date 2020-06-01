@@ -1,0 +1,30 @@
+.item-container {
+    width: 30%;
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+  
+.item-container::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    padding: 70px;
+    margin-right: 2px;
+    background-color: coral;
+    flex-shrink: 0;
+}
+
+.item-controls {
+    text-align: center;
+}
+
+.scrollable-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
