@@ -1,19 +1,19 @@
 {
-    "employeeData": [
-      {
-        "firstName": "JAMES",
-        "lastName": "ALLEN",
-        "jobTitle": "Founder"
-      },
-      {
-        "firstName": "BARRY",
-        "lastName": "EAST",
-        "jobTitle": "Accountant"
-      },
-      {
-        "firstName": "SARAH",
-        "lastName": "DUNNER",
-        "jobTitle": "Attourney"
-      }
-    ]
-  }
+  "employeeData": [
+    {
+      "firstName": "JAMES",
+      "lastName": "ALLEN",
+      "jobTitle": "Founder"
+    },
+    {
+      "firstName": "BARRY",
+      "lastName": "EAST",
+      "jobTitle": "Accountant"
+    },
+    {
+      "firstName": "SARAH",
+      "lastName": "DUNNER",
+      "jobTitle": "Attourney"
+    }
+  ]
+}

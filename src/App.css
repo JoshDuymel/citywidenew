@@ -74,18 +74,18 @@ button{
 ::-webkit-scrollbar {
     width: 10px;
     border-radius: 50%;
-  }
+}
   
 ::-webkit-scrollbar-track {
-background: #ffffff; 
+    background: #ffffff; 
 }
 
 ::-webkit-scrollbar-thumb {
-background: #241C3D; 
+    background: #241C3D; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #555; 
+    background: #555; 
 }
 
 @keyframes swing
