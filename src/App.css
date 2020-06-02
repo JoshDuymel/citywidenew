@@ -6,93 +6,12 @@ a{
     text-decoration: none;
 }
 
-h1{
-    font-size: 6vw;
-    color: white;
-    font-weight: 300;
-}
-
-h2{
-    color: black;
-    font-size: 4vw;
-}
-
-h3{
-    color: black;
-    font-size: 2vw;
-}
-
-h4{
-
-}
-
-h5{
-    color: #A26C1D;
-    font-size: 1vw;
-}
-
-h6{
-    color: white;
-    font-size: 1.8vw;
-    font-weight: 600;
-    margin: 0vw;
-}
-
-p{
-    color: #909090;
-    font-size: 1.2vw;
-}
-
-input{
-    margin-bottom: 3vw;
-}
 
 button{
     background-color: #241C3D;
     color: none;
     fill: none;
     border: none;
-}
-
-.sDText{
-    color: white;
-    font-size: 0.8vw;
-    font-weight: 400;
-    text-align: center;
-}
-
-.cta{
-    color: black;
-    background-color: white;
-    border: solid 1px #241C3D;
-    padding: 1vw;
-    text-align: center;
-    width: 10vw;
-    text-decoration: none;
-}
-
-.cta:hover{
-    transform: skewX(-10deg) translate(10px);
-    transition: 0.5s;
-    background-color: #241C3D;
-    color: white;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 50%;
-}
-  
-::-webkit-scrollbar-track {
-    background: #ffffff; 
-}
-
-::-webkit-scrollbar-thumb {
-    background: #241C3D; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
 }
 
 .homeCont{
@@ -110,23 +29,207 @@ button{
 .featureStaticCont{
     background-image: url(./images/static.gif);
     background-repeat: repeat;
-    /* background-size: cover; */
 }
 
-.sectionCont{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    margin: 10vw;
-    gap: 4vw;
+@media only screen and (min-width: 600px) {
+
+    h1{
+        font-size: 6vw;
+        color: white;
+        font-weight: 300;
+    }
+
+    h2{
+        color: black;
+        font-size: 4vw;
+    }
+
+    h3{
+        color: black;
+        font-size: 2vw;
+    }
+
+    h4{
+
+    }
+
+    h5{
+        color: #A26C1D;
+        font-size: 1vw;
+    }
+
+    h6{
+        color: white;
+        font-size: 1.8vw;
+        font-weight: 600;
+        margin: 0vw;
+    }
+
+    p{
+        color: #909090;
+        font-size: 1.2vw;
+    }
+
+    input{
+        margin-bottom: 3vw;
+    }
+
+    .sDText{
+        color: white;
+        font-size: 0.8vw;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .cta{
+        color: black;
+        font-size: 1vw;
+        background-color: white;
+        border: solid 1px #241C3D;
+        padding: 1vw;
+        text-align: center;
+        width: 10vw;
+        text-decoration: none;
+    }
+
+    .cta:hover{
+        transform: skewX(-10deg) translate(10px);
+        transition: 0.5s;
+        background-color: #241C3D;
+        color: white;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 50%;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #ffffff; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #241C3D; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
+    .featureCont{
+        display: grid;
+        grid-gap: 4vw;
+        padding: 16vw;
+        padding-top: 15vw;
+        background-color: rgb(36, 28, 61, 0.9);
+    }
+
+    .sectionCont{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin: 10vw;
+        gap: 4vw;
+    }
+
+    .joinUs{
+        margin: 10vw;
+        margin-top: 1vw;
+    }
+    .joinUsLink{
+        color: #A26C1D;
+        border-bottom: solid 1px;
+        text-align: right;
+        height: 1.5vw;
+    }
 }
 
-.joinUs{
-    margin: 10vw;
-    margin-top: 1vw;
-}
-.joinUsLink{
-    color: #A26C1D;
-    border-bottom: solid 1px;
-    text-align: right;
-    height: 1.5vw;
+@media only screen and (max-width: 600px) {
+
+    h1{
+        font-size: 14vw;
+        color: white;
+        font-weight: 300;
+    }
+
+    h2{
+        color: black;
+        font-size: 8vw;
+    }
+
+    h3{
+        color: black;
+        font-size: 8vw;
+    }
+
+    h5{
+        color: #A26C1D;
+        font-size: 5vw;
+    }
+
+    h6{
+        color: white;
+        font-size: 6vw;
+        font-weight: 600;
+        margin: 0vw;
+    }
+
+    .featureBgCont{
+        height: 140vw;
+    }
+
+    .featureCont{
+        display: grid;
+        grid-template-rows: auto auto;
+        height: 132vw;
+        gap: 4vw;
+        background-color: rgb(36, 28, 61, 0.9);
+        padding: 4vw;
+    }
+
+    .featureCont h1{
+        padding-top: 20vh;
+    }
+
+    .sDText{
+        color: white;
+        font-size: 4vw;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .sectionCont{
+        display: grid;
+        margin: 4vw;
+        gap: 10vw;
+    }
+
+    .cta{
+        color: black;
+        font-size: 4vw;
+        background-color: white;
+        border: solid 1px #241C3D;
+        padding: 4vw;
+        text-align: center;
+        width: 84vw;
+        text-decoration: none;
+    }
+
+    .cta:hover{
+        transform: skewX(-5deg) translate(3px);
+        transition: 0.5s;
+        background-color: #241C3D;
+        color: white;
+    }
+
+    .joinUs{
+        margin: 4vw;
+        margin-top: 10vw;
+    }
+    .joinUsLink{
+        color: #A26C1D;
+        border-bottom: solid 1px;
+        text-align: right;
+        height: 1.5vw;
+    }
+
 }

@@ -1,112 +1,223 @@
-.gpExplanation{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 3vw;
-    justify-content: center;
-    align-items: flex-start;
+@media only screen and (min-width: 600px) {
+
+    .gpExplanation{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 3vw;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .gpExplanation h3{
+        text-align: right;
+        margin: 0px;
+    }
+
+    .sectionContPurp{
+        background-color: #241C3D;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding: 10vw;
+        gap: 4vw;
+    }
+
+    .sectionContGray{
+        background-color: #f9f9f9;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding: 10vw;
+        gap: 4vw;
+    }
+
+    p{
+        margin: 0.5vw;
+    }
+
+    .titleContLight{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        width: 80vw;
+    }
+
+    .titleContLight h5{
+        color: #F0C17D;
+    }
+
+    .contentContScroll{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 4vw;
+        overflow-x: hidden;
+    }
+
+    .contentContScroll::-webkit-scrollbar{
+        display: none;
+        -ms-overflow-style: none;
+    }
+
+    .scrollArrows{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        width: 20vw;
+        margin-left: 34vw;
+    }
+
+    .ethicsCont{
+        margin: 10vw;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .ethicsInfoCont{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 4vw;
+    }
+
+    .ethicsInfoCont h3{
+        color: #909090;
+        font-weight: 500;
+    }
+
+    .ethicsInfoCont h4{
+        color: #A26C1D;
+        font-size: 2vw;
+        margin-top: -0.6vw;
+    }
+
+    .ethicsInfoCont rect{
+        fill: #A26C1D;
+    }
+
+    .gauranteeCont{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 3vw;
+    }
+
+    .traditionCont{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 3vw;
+    }
+
+    .traditionCont h2{
+        font-size: 3vw;
+        margin-top: 0px;
+        color: #909090;
+    }
+
+    .traditionCont p{
+        font-size: 2vw;
+        color: black;
+    }
+
 }
 
-.gpExplanation h3{
-    text-align: right;
-    margin: 0px;
-}
+@media only screen and (max-width: 600px) {
 
-.sectionContPurp{
-    background-color: #241C3D;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    padding: 10vw;
-    grid-gap: 4vw;
-}
+    .gpExplanation{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 3vw;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
-.sectionContGray{
-    background-color: #f9f9f9;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    padding: 10vw;
-    grid-gap: 4vw;
-}
+    .gpExplanation h3{
+        text-align: right;
+        margin: 0px;
+    }
 
-p{
-    margin: 0.5vw;
-}
+    .sectionContPurp{
+        background-color: #241C3D;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding: 4vw;
+        gap: 4vw;
+    }
 
-.titleContLight{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    width: 80vw;
-}
+    .sectionContGray{
+        background-color: #f9f9f9;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding: 4vw;
+        gap: 4vw;
+    }
 
-.titleContLight h5{
-    color: #F0C17D;
-}
+    p{
+        margin: 0.5vw;
+    }
 
-.contentContScroll{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 4vw;
-    overflow-x: hidden;
-}
+    .titleContLight{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        width: 80vw;
+    }
 
-.contentContScroll::-webkit-scrollbar{
-    display: none;
-    -ms-overflow-style: none;
-}
+    .titleContLight h5{
+        color: #F0C17D;
+    }
 
-.scrollArrows{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
-    width: 20vw;
-    margin-left: 34vw;
-}
+    .contentContScroll{
+        display: grid;
+        gap: 4vw;
+        overflow-x: hidden;
+    }
 
-.ethicsCont{
-    margin: 10vw;
-    display: grid;
-    grid-template-rows: auto auto;
-}
+    .contentContScroll::-webkit-scrollbar{
+        display: none;
+        -ms-overflow-style: none;
+    }
 
-.ethicsInfoCont{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-gap: 4vw;
-}
+    .ethicsCont{
+        margin: 4vw;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
 
-.ethicsInfoCont h3{
-    color: #909090;
-    font-weight: 500;
-}
+    .ethicsInfoCont{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 4vw;
+    }
 
-.ethicsInfoCont h4{
-    color: #A26C1D;
-    font-size: 2vw;
-    margin-top: -0.6vw;
-}
+    .ethicsInfoCont h3{
+        color: #909090;
+        font-weight: 500;
+    }
 
-.ethicsInfoCont rect{
-    fill: #A26C1D;
-}
+    .ethicsInfoCont h4{
+        color: #A26C1D;
+        font-size: 6vw;
+        margin-top: -0.6vw;
+    }
 
-.gauranteeCont{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 3vw;
-}
+    .ethicsInfoCont rect{
+        fill: #A26C1D;
+    }
 
-.traditionCont{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-gap: 3vw;
-}
+    .gauranteeCont{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 3vw;
+    }
 
-.traditionCont h2{
-    font-size: 3vw;
-    margin-top: 0px;
-    color: #909090;
-}
+    .traditionCont{
+        display: grid;
+        gap: 3vw;
+    }
 
-.traditionCont p{
-    font-size: 2vw;
-    color: black;
+    .traditionCont h2{
+        font-size: 6vw;
+        margin-top: 0px;
+        color: #909090;
+    }
+
+    .traditionCont p{
+        font-size: 4vw;
+        color: black;
+    }
+
 }

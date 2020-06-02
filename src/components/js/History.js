@@ -6,7 +6,7 @@ export default function History(props) {
         <div className='historyCont'>
             <h1>{props.date}</h1>
             <svg>
-                <rect width='2vw' height='4px'/>
+                <rect/>
             </svg>
             <h2>{props.title}</h2>
         </div>

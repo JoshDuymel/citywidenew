@@ -1,28 +1,67 @@
-.teamExpCont{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    gap: 3vw;
+@media only screen and (min-width: 600px) {
+    
+    .teamExpCont{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 3vw;
+    }
+
+    .teamExpCont h1{
+        font-size: 3vw;
+        color: black;
+        font-weight: 400;
+    }
+
+    .teamExpCont h2{
+        font-size: 1.5vw;
+        color: #909090;
+        font-weight: 400;
+    }
+
+    .teamCountCont{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+    }
+
+    .teamContentCont{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2vw;
+    }
+
 }
 
-.teamExpCont h1{
-    font-size: 3vw;
-    color: black;
-    font-weight: 400;
-}
+@media only screen and (max-width: 600px) {
+    
+    .teamExpCont{
+        display: grid;
+        width: 92vw;
+        gap: 3vw;
 
-.teamExpCont h2{
-    font-size: 1.5vw;
-    color: #909090;
-    font-weight: 400;
-}
+    }
 
-.teamCountCont{
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-}
+    .teamExpCont h1{
+        font-size: 6vw;
+        color: black;
+        font-weight: 400;
+    }
 
-.teamContentCont{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2vw;
+    .teamExpCont h2{
+        font-size: 5vw;
+        color: #909090;
+        font-weight: 400;
+    }
+
+    .teamCountCont{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+    }
+
+    .teamContentCont{
+        display: grid;
+        gap: 10vw;
+        margin: -4vw;
+        margin-bottom: 20vw;
+    }
+
 }

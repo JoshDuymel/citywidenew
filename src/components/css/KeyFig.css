@@ -1,26 +1,65 @@
-.keyFigCont{
-    display: grid;
-    grid-template-rows: 60% 5% 35%;
-    width: 20vw;
-    border: 1px solid #6D6975;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    margin: 1vw;
-    flex-shrink: 0;
+@media only screen and (min-width: 600px) {
+
+    .keyFigCont{
+        display: grid;
+        grid-template-rows: 60% 5% 35%;
+        width: 20vw;
+        border: 1px solid #6D6975;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin: 1vw;
+        flex-shrink: 0;
+        overflow-x: hidden;
+    }
+
+    .keyFigCont h1{
+        font-size: 5vw;
+        color: #F0C17D;
+        margin-bottom: 0px;
+        align-items: flex-end;
+    }
+
+    .keyFigCont h2{
+        font-size: 1vw;
+        color: white;
+    }
+
+    .keyFigCont svg{
+        fill: white;
+        height: 4px;
+        width: 3vw;
+    }
 }
 
-.keyFigCont h1{
-    font-size: 5vw;
-    color: #F0C17D;
-    margin-bottom: 0px;
-    align-items: flex-end;
-}
+@media only screen and (max-width: 600px) {
 
-.keyFigCont h2{
-    font-size: 1vw;
-    color: white;
-}
+    .keyFigCont{
+        display: grid;
+        height: 60vh;
+        width: 80vw;
+        border: 1px solid #6D6975;
+        padding: 4vw;
+        margin: 1vw;
+        flex-shrink: 0;
+        overflow-x: hidden;
+    }
 
-.keyFigCont svg{
-    fill: white;
+    .keyFigCont h1{
+        font-size: 25vw;
+        color: #F0C17D;
+        margin-bottom: 1vw;
+        align-items: flex-end;
+        line-height: 1;
+    }
+
+    .keyFigCont h2{
+        font-size: 6vw;
+        color: white;
+    }
+
+    .keyFigCont rect{
+        fill: white;
+        height: 4px;
+        width: 10vw;
+    }
 }

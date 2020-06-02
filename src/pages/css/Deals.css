@@ -1,24 +1,41 @@
-.dealsCont{
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 600px) {
+ 
+ .dealsCont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dealsSectionCont{
+        display: grid;
+        margin: 10vw;
+        gap: 4vw;
+    }
+
+    .dealsContentCont{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2vw;
+    }
+
 }
 
-.featureCont{
-    display: grid;
-    gap: 4vw;
-    padding: 16vw;
-    padding-top: 15vw;
-    background-color: rgb(36, 28, 61, 0.9);
-}
-
-.dealsSectionCont{
-    display: grid;
-    margin: 10vw;
-    gap: 4vw;
-}
-
-.dealsContentCont{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2vw;
-}
+@media only screen and (max-width: 600px) {
+ 
+    .dealsCont{
+           display: flex;
+           flex-direction: column;
+       }
+   
+       .dealsSectionCont{
+           display: grid;
+           margin: 0vw;
+           gap: 10vw;
+           margin-bottom: 20vw;
+       }
+   
+       .dealsContentCont{
+           display: grid;
+           gap: 10vw;
+       }
+   
+   }

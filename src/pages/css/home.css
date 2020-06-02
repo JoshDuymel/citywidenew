@@ -1,9 +1,7 @@
-.featureCont{
-    display: grid;
-    grid-gap: 4vw;
-    padding: 16vw;
-    padding-top: 15vw;
-    background-color: rgb(36, 28, 61, 0.9);
+.homeCont{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
 }
 
 .mainCont{
@@ -16,35 +14,77 @@
     grid-template-columns: 10% 90%;
 }
 
-.contentCont{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2vw;
-    height: 34vw;
+@media only screen and (min-width: 600px) {
+
+    .contentCont{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2vw;
+        height: 34vw;
+    }
+
+    .newsCont{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding: 10vw;
+        gap: 4vw;
+        background-color: #f9f9f9;
+    }
+
+    .linkCta{
+        font-size: 1vw;
+        text-align: center;
+        color: black;
+        background-color: white;
+        border: solid 1px #241C3D;
+        padding: 1vw;
+        width: 10vw;
+        justify-self: center;
+        text-decoration: none;
+    }
+
+    .linkCta:hover{
+        transform: skewX(-10deg) translate(10px);
+        transition: 0.5s;
+        background-color: #241C3D;
+        color: white;
+    }
+
 }
 
-.newsCont{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    padding: 10vw;
-    grid-gap: 4vw;
-    background-color: #f9f9f9;
-}
+@media only screen and (max-width: 600px) {
 
-.linkCta{
-    text-align: center;
-    color: black;
-    background-color: white;
-    border: solid 1px #241C3D;
-    padding: 1vw;
-    width: 10vw;
-    justify-self: center;
-    text-decoration: none;
-}
+    .contentCont{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10vh;
+        margin: -4vw;
+    }
 
-.linkCta:hover{
-    transform: skewX(-10deg) translate(10px);
-    transition: 0.5s;
-    background-color: #241C3D;
-    color: white;
+    .newsCont{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding: 4vw;
+        gap: 4vw;
+        background-color: #f9f9f9;
+    }
+
+    .linkCta{
+        color: black;
+        font-size: 4vw;
+        background-color: white;
+        border: solid 1px #241C3D;
+        padding: 4vw;
+        text-align: center;
+        width: 84vw;
+        text-decoration: none;
+    }
+
+    .linkCta:hover{
+        transform: skewX(-5deg) translate(3px);
+        transition: 0.5s;
+        background-color: #241C3D;
+        color: white;
+    }
+
 }

@@ -1,20 +1,49 @@
-.employeeBgCont{
-    background-image: url(../../images/static.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 26vw;
+@media only screen and (min-width: 600px) {
+    
+    .employeeBgCont{
+        background-image: url(../../images/static.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 26vw;
+    }
+
+    .employeeCont{
+        background-color: rgb(36, 28, 61, 0.9);
+        display: grid;
+        grid-template-rows: 8fr 1fr;
+        vertical-align: text-bottom;
+        padding: 2vw;
+        height: 22vw;
+    }
+
+    .empName{
+        color: white;
+        align-self: flex-end;
+    }
+
 }
 
-.employeeCont{
-    background-color: rgb(36, 28, 61, 0.9);
-    display: grid;
-    grid-template-rows: 8fr 1fr;
-    vertical-align: text-bottom;
-    padding: 2vw;
-    height: 22vw;
-}
+@media only screen and (max-width: 600px) {
+    
+    .employeeBgCont{
+        background-image: url(../../images/static.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vw;
+    }
 
-.empName{
-    color: white;
-    align-self: flex-end;
+    .employeeCont{
+        background-color: rgb(36, 28, 61, 0.9);
+        display: grid;
+        grid-template-rows: 8fr 1fr;
+        vertical-align: text-bottom;
+        padding: 4vw;
+        height: 92vw;
+    }
+
+    .empName{
+        color: white;
+        align-self: flex-end;
+    }
+
 }

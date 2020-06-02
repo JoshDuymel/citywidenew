@@ -7,10 +7,6 @@
     margin: auto;
     flex-shrink: 0;
 }
-
-.skewer{
-    transform: skewY(10);
-}
   
 .item-container::-webkit-scrollbar {
     display: none;

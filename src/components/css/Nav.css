@@ -1,39 +1,78 @@
 .main-nav{
     display: grid;
-    grid-template-columns: 10% 10% 70%;
-    grid-gap: 3%;
-    padding: 1vw;
-    width: 100vw;
     background-color: rgb(36, 28, 61, 0.9);
     position: fixed;
     left: 0;
     top: 0;
+    height: 8vh;
 }
 
 .nav-link{
     text-decoration: none;
     color: white;
-    font-size: 1vw;
-    font-weight: 300;
-    text-align: right;
 }
 
-#contact{
-    text-decoration: none;
-    color: white;
-    font-size: 1vw;
-    font-weight: 300;
-    text-align: right;
-    padding-right: 5vw;
-    padding-top:1vw;
-    vertical-align: middle;
+@media only screen and (min-width: 600px) {
+
+    .main-nav{ 
+        grid-template-columns: 10% 10% 70%;
+        padding: 1vw;
+        width: 98vw;
+        gap: 3%;
+    }
+
+    .nav-image{
+        width: 100%;
+        text-align: right;
+    }
+
+    #navLogo{
+        width: 4vw;
+    }
+
+    .nav-link{
+        font-size: 1vw;
+        font-weight: 300;
+        text-align: right;
+    }
+
+    #contact{
+        color: #F0C17D;
+        font-size: 1vw;
+        font-weight: 300;
+        text-align: right;
+        padding-right: 5vw;
+        padding-top:1vw;
+    }
+
 }
 
-.nav-image{
-    width: 100%;
-    text-align: right;
-}
+@media only screen and (max-width: 600px) {
 
-#navLogo{
-    width: 4vw;
+    .main-nav{ 
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 4vw;
+        width: 92vw;
+        gap: 5%;
+    }
+
+    .nav-image{
+        height: 100%;
+        text-align: left;
+    }
+
+    #navLogo{
+        width: 65%;
+    }
+
+    .nav-link{
+        font-size: 4vw;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    #contact{
+        display: none;
+    }
+
 }
