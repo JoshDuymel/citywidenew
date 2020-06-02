@@ -23,7 +23,7 @@
 .dealCont:hover{
     transition: 1s;
     height: 25vw;
-    background-color: rgb(36, 28, 61, 0.8);
+    background-color: rgba(137, 118, 194, 0.8);
 }
 
 .jobType{

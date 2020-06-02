@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import dealData from '../../data/deals.json';
 import employeeData from '../../data/employees.json';
-import newsData from '../../data/newsData.json';
+import newsData from '../../data/newsData.js';
 
 import DealCont from '../../components/js/Deal';
 import Employee from '../../components/js/Employee';
@@ -80,7 +80,7 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                        {newsData.newsData.slice(0,1).map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
+                        {newsData.slice(0,1).map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
                     </div>
                 </div>
                 <Link to="/News" className="linkCta">SEE MORE</Link>

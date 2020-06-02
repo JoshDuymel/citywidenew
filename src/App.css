@@ -69,6 +69,8 @@ button{
 
 .cta:hover{
     animation: swing 1s ease;
+    color: rgb(233, 233, 233);
+    background-color: rgb(12, 12, 12);
 }
 
 ::-webkit-scrollbar {
