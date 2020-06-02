@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import dealData from '../../data/deals.json';
 import employeeData from '../../data/employees.json';
-import newsData from '../../data/news.json';
+import newsData from '../../data/newsData.json';
 
 import DealCont from '../../components/js/Deal';
 import Employee from '../../components/js/Employee';
@@ -17,9 +17,7 @@ export default function Home() {
 
             <div className="featureBgCont" title="a featureBox">
                 <div className="featureCont">
-                    <h1>
-                    Hands-on financing for<br/>Kiwis.
-                    </h1>
+                    <h1>Hands-on financing for<br/>Kiwis.</h1>
                     <h4 className="sDText" >SCROLL DOWN</h4>
                 </div>
             </div>
@@ -82,7 +80,7 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                        {newsData.newsData.slice(0).map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
+                        {newsData.newsData.slice(0,1).map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
                     </div>
                 </div>
                 <Link to="/News" className="linkCta">SEE MORE</Link>

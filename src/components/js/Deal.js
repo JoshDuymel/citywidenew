@@ -4,9 +4,9 @@ import "../css/Deal.css";
 export default function DealCont(props) {
 
     const barColor = () => {
-        if(props.dealType == "ACQUISITION") {
+        if(props.dealType === "ACQUISITION") {
             return "#862BB0"
-        } else if(props.dealType == "LOAN") {
+        } else if(props.dealType === "LOAN") {
             return "#183BB7"
         } else {
             return "#34BB7A"

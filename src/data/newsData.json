@@ -1,0 +1,19 @@
+{
+  "newsData": [
+    {
+      "coverImage": "../images/lion.gif",
+      "date": "13 MAY 2020",
+      "title": "ON THE ROAD TO RECOVERY"
+    },
+    {
+      "coverImage": "../images/lion.gif",
+      "date": "13 MAY 2020",
+      "title": "ON THE ROAD TO RECOVERY"
+    },
+    {
+      "coverImage": "../images/lion.gif",
+      "date": "13 MAY 2020",
+      "title": "ON THE ROAD TO RECOVERY"
+    }
+  ]
+}

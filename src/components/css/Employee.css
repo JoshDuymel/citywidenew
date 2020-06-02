@@ -2,6 +2,7 @@
     background-image: url(../../images/static.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 28vw;
 }
 
 .employeeCont{
@@ -10,6 +11,7 @@
     grid-template-rows: 8fr 1fr;
     vertical-align: text-bottom;
     padding: 2vw;
+    height: 24vw;
 }
 
 .empName{
