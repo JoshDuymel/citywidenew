@@ -16,11 +16,6 @@
         "counterName": "Lorem Ipsum"
       },
       {
-        "dealType": "PROPERTY",
-        "customerName": "Paula Smith",
-        "counterName": "Lorem Ipsum"
-      },
-      {
         "dealType": "LOAN",
         "customerName": "Lance Smith",
         "counterName": "Lorem Ipsum"
@@ -31,8 +26,43 @@
         "counterName": "Lorem Ipsum"
       },
       {
+        "dealType": "ACQUISITION",
+        "customerName": "John King",
+        "counterName": "Lorem Ipsum"
+      },
+      {
+        "dealType": "ACQUISITION",
+        "customerName": "John King",
+        "counterName": "Lorem Ipsum"
+      },
+      {
         "dealType": "LOAN",
         "customerName": "Lance Smith",
+        "counterName": "Lorem Ipsum"
+      },
+      {
+        "dealType": "ACQUISITION",
+        "customerName": "John King",
+        "counterName": "Lorem Ipsum"
+      },
+      {
+        "dealType": "PROPERTY",
+        "customerName": "Paula Smith",
+        "counterName": "Lorem Ipsum"
+      },
+      {
+        "dealType": "LOAN",
+        "customerName": "Lance Smith",
+        "counterName": "Lorem Ipsum"
+      },
+      {
+        "dealType": "LOAN",
+        "customerName": "Lance Smith",
+        "counterName": "Lorem Ipsum"
+      },
+      {
+        "dealType": "PROPERTY",
+        "customerName": "Paula Smith",
         "counterName": "Lorem Ipsum"
       }
     ]

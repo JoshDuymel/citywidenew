@@ -19,8 +19,8 @@ export default function Deals() {
 
             <div className="dealsSectionCont" title="the latest deals">
                 <div className="titleCont">
-                    <h5>02</h5>
-                    <h5>OUR LATEST DEALS</h5>
+                    <h5>{dealData.length}</h5>
+                    <h5>REFERENCES</h5>
                 </div>
                 <div className='dealsContentCont'>
                     {dealData.dealData.map(i => <DealCont dealType={i.dealType} customerName={i.customerName} counterName={i.counterName}/>)}
