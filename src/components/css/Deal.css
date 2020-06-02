@@ -15,7 +15,7 @@
 
 .dealCont:hover{
     background-color: transparent;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .purpBG:hover{
@@ -38,6 +38,7 @@
     color: white;
     font-weight: 700;
     width: fit-content;
+    border-bottom: white;
 }
 
 .roleType{
