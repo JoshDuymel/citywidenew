@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "emmet": "^2.0.0",
     "hooks": "^0.3.2",
+    "lodash.debounce": "^4.0.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",

@@ -2,6 +2,10 @@
     overflow: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 h1{
     font-size: 6vw;
     color: white;
@@ -44,7 +48,7 @@ input{
 }
 
 button{
-    background-color: none;
+    background-color: #241C3D;
     color: none;
     fill: none;
     border: none;
@@ -68,7 +72,8 @@ button{
 }
 
 .cta:hover{
-    animation: swing 1s ease;
+    transform: skewX(-10deg) translate(10px);
+    transition: 0.5s;
 }
 
 ::-webkit-scrollbar {
@@ -86,38 +91,4 @@ button{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
-}
-
-@keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
 }

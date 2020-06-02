@@ -34,6 +34,7 @@ p{
 .titleContLight{
     display: grid;
     grid-template-columns: 10% 90%;
+    width: 80vw;
 }
 
 .titleContLight h5{
@@ -44,8 +45,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 4vw;
-    overflow-y: auto;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 
 .contentContScroll::-webkit-scrollbar{

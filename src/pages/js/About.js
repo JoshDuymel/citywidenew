@@ -7,6 +7,8 @@ import historyData from '../../data/history.json';
 import KeyFig from '../../components/js/KeyFig';
 import History from '../../components/js/History';
 
+import ScrollableContainer from "../../components/js/ScrollableContainer";
+
 export default function About() {
 
     return (
@@ -39,24 +41,9 @@ export default function About() {
                     <h5>KEY FIGURES</h5>
                 </div>
                 <div className='contentContScroll'>
-                    {keyFiguresData.keyFiguresData.map(i => <KeyFig date={i.date} title={i.title}/>)}
-                </div>
-                <div className='scrollArrows'>
-                    <button>
-                        <svg width="42" height="10" viewBox="0 0 42 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.94975 8.40687L4.24264 9.11398L0 4.87134L0.707107 4.16423L4.94975 8.40687Z" fill="white"/>
-                            <path d="M4.2427 0.628662L4.9498 1.33577L0.707162 5.57841L0 4.87134L4.2427 0.628662Z" fill="white"/>
-                            <path d="M1.24268 4.37131H41.2427V5.37131H1.24268V4.37131Z" fill="white"/>
-                        </svg>
-                    </button>
-
-                    <button>
-                        <svg width="42" height="10" viewBox="0 0 42 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M36.7929 1.59309L37.5 0.885986L41.7427 5.12863L41.0356 5.83573L36.7929 1.59309Z" fill="white"/>
-                            <path d="M37.5 9.3713L36.7929 8.66419L41.0355 4.42155L41.7427 5.12863L37.5 9.3713Z" fill="white"/>
-                            <path d="M40.5 5.62865L0.5 5.62865L0.5 4.62865L40.5 4.62865V5.62865Z" fill="white"/>
-                        </svg>
-                    </button>
+                    <ScrollableContainer>
+                        {keyFiguresData.keyFiguresData.map(i => <KeyFig date={i.date} title={i.title}/>)}
+                    </ScrollableContainer>
                 </div>
             </div>
 
@@ -66,20 +53,9 @@ export default function About() {
                     <h5>HISTORY</h5>
                 </div>
                 <div className='contentContScroll'>
-                    {historyData.historyData.map(i => <History date={i.date} title={i.title}/>)}
-                </div>
-                <div className='scrollArrows'>
-                    <svg width="42" height="10" viewBox="0 0 42 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.94975 8.40663L4.24264 9.11373L0 4.87109L0.707107 4.16398L4.94975 8.40663Z" fill="black"/>
-                    <path d="M4.2427 0.628418L4.9498 1.33552L0.707162 5.57817L0 4.87109L4.2427 0.628418Z" fill="black"/>
-                    <path d="M1.24268 4.37107H41.2427V5.37107H1.24268V4.37107Z" fill="black"/>
-                    </svg>
-
-                    <svg width="42" height="10" viewBox="0 0 42 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M36.7927 1.59285L37.4998 0.885742L41.7424 5.12838L41.0353 5.83549L36.7927 1.59285Z" fill="black"/>
-                    <path d="M37.4997 9.37106L36.7926 8.66395L41.0353 4.42131L41.7424 5.12838L37.4997 9.37106Z" fill="black"/>
-                    <path d="M40.4998 5.62841L0.499756 5.62841L0.499756 4.62841L40.4998 4.62841V5.62841Z" fill="black"/>
-                    </svg>
+                    <ScrollableContainer>
+                        {historyData.historyData.map(i => <History date={i.date} title={i.title}/>)}
+                    </ScrollableContainer>
                 </div>
             </div>
 

@@ -3,17 +3,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 30vw;
-    border-top: 0px white solid;
-}
-
-.dealBgCont:hover{
-    transition: 1s;
-    border-top: 1vw white solid;
-    height: 29vw;
 }
 
 .dealCont{
-    background-color: rgb(36, 28, 61, 0.9);
+    background-color: rgba(36, 28, 61, 0.9);
     display: grid;
     grid-template-rows: 3fr 1fr 1fr;
     padding: 2vw;
@@ -21,15 +14,30 @@
 }
 
 .dealCont:hover{
+    background-color: transparent;
     transition: 1s;
-    height: 25vw;
-    background-color: rgb(36, 28, 61, 0.8);
+}
+
+.purpBG:hover{
+    transition: 0.5s;
+    background-color: rgba(134, 43, 176, 0.9);
+}
+
+.greenBG:hover{
+    transition: 1s;
+    background-color: rgba(52, 187, 122, 0.9);
+}
+
+.blueBG:hover{
+    transition: 1s;
+    background-color: rgba(24, 58, 183, 0.9);
 }
 
 .jobType{
     font-size: 1.8vw;
     color: white;
     font-weight: 700;
+    width: fit-content;
 }
 
 .roleType{

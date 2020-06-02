@@ -4,8 +4,9 @@
     width: 15vw;
     border-bottom: 5px solid #57259E;
     padding: 2vw;
-    margin-bottom: 0px;
     background-color: white;
+    margin: 1vw;
+    flex-shrink: 0;
 }
 
 .historyCont h1{

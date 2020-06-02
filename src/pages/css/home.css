@@ -62,7 +62,8 @@
 }
 
 .linkCta:hover{
-    animation: swing 1s ease;
+    transform: skewX(-10deg) translate(10px);
+    transition: 0.5s;
 }
 
 
@@ -74,12 +75,4 @@
 .joinUsLink{
     color: #A26C1D;
     border-bottom: solid 1px;
-}
-
-.test-content{
-    height: 180px;
-    width: 180px;
-    background-color: bisque;
-    margin: 30px;
-    text-align: center;
 }

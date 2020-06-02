@@ -1,25 +1,30 @@
 .item-container {
-    width: 30%;
+    width: 100%;
     display: flex;
     overflow-x: scroll;
     list-style: none;
-    padding: 0;
+    padding:0px;
     margin: auto;
+    flex-shrink: 0;
+}
+
+.skewer{
+    transform: skewY(10);
 }
   
 .item-container::-webkit-scrollbar {
     display: none;
 }
 
-.item {
-    padding: 70px;
-    margin-right: 2px;
-    background-color: coral;
-    flex-shrink: 0;
-}
-
 .item-controls {
     text-align: center;
+    width: 80vw;
+    margin-top: 4vw;
+}
+
+#controlArrow{
+    margin: 2vw;
+    padding: 0.5vw;
 }
 
 .scrollable-container{
@@ -27,4 +32,5 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    width: 80vw;
 }
