@@ -4,8 +4,8 @@ import "../css/home.css";
 import { Link } from "react-router-dom";
 
 import dealData from '../../data/deals.json';
-import employeeData from '../../data/employees.json';
-import newsData from '../../data/newsData.json';
+import employeeData from '../../data/employees';
+import newsData from '../../data/newsData';
 
 import DealCont from '../../components/js/Deal';
 import Employee from '../../components/js/Employee';
@@ -52,7 +52,7 @@ export default function Home() {
                 </div>
                 <p>Our team of professionals is diverse and can boast collective decades of expereince to our craft.</p>
                 <div className='contentCont'>
-                    {employeeData.employeeData.slice(0,3).map(i => <Employee firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
+                    {employeeData.slice(0,3).map(i => <Employee profPic={i.profPic} firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
                 </div>
                 <Link to="/Team" className="linkCta">SEE MORE</Link>
             </div>
@@ -68,7 +68,7 @@ export default function Home() {
                 </div>
                 <div>
                     <div>
-                        {newsData.newsData.slice(0,1).map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
+                        {newsData.slice(0,1).map(i => <NewsItem coverImage={i.coverImage} date={i.date} title={i.title}/>)}
                     </div>
                 </div>
                 <Link to="/News" className="linkCta">SEE MORE</Link>

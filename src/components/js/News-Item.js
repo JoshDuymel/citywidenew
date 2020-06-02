@@ -7,7 +7,7 @@ export default function NewsItem(props) {
     return (
         
         <div className='newsContainer'>
-            <img className='newsImg' url='{props.coverImage}' alt="unrelated" />
+            <img className='newsImg' src={props.coverImage} alt="unrelated" />
             <div className='newsContent'>
                 <h3 className='newsDate'>{props.date}</h3>
                 <h2>{props.title}</h2>

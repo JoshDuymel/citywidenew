@@ -9,7 +9,9 @@
     }
 
     .newsImg{
+        height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     .newsContent{
@@ -38,14 +40,16 @@
     .newsContainer{
         background-color: white;
         display: grid;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 60vh auto auto;
         gap: 10vh;
         margin: -4vw;
         padding: 4vw;
     }
 
     .newsImg{
-        width: 80vw;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 
     .newsContent{

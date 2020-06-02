@@ -2,7 +2,7 @@ import React from 'react';
 
 import "../css/Team.css";
 
-import employeeData from '../../data/employees.json';
+import employeeData from '../../data/employees';
 import Employee from '../../components/js/Employee';
 
 export default function Team() {
@@ -29,7 +29,7 @@ export default function Team() {
                     </div>
                 </div>
                 <div className='teamContentCont'>
-                    {employeeData.employeeData.map(i => <Employee firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
+                    {employeeData.map(i => <Employee firstName={i.firstName} lastName={i.lastName} jobTitle={i.jobTitle}/>)}
                 </div>
                 {/* <button className="linkCta" onClick={loadMore()} >LOAD MORE</button> */}
             </div>            
